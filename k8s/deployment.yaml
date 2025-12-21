@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-app
+  namespace: default
+spec:
+  replicas: 1 # Ban đầu để là 1
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello
+        image: hashicorp/http-echo:latest
+        args:
+        - "-text=Xin chao! Day la EKS + ArgoCD GitOps Lab"
+        ports:
+        - containerPort: 5678
