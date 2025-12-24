@@ -17,6 +17,6 @@ spec:
       - name: hello
         image: hashicorp/http-echo:latest
         args:
-        - "-text=Xin chao! Day la EKS + ArgoCD GitOps Lab"
+        - "-text=HungNDK Lab 231225"
         ports:
         - containerPort: 5678
