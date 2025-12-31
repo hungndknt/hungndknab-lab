@@ -17,6 +17,6 @@ spec:
       - name: hello
         image: hashicorp/http-echo:latest
         args:
-        - "-text=HungNDK Lab 311225"
+        - "-text=HungNDK Lab 311225-final"
         ports:
         - containerPort: 5678
