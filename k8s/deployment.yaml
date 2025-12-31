@@ -4,7 +4,7 @@ metadata:
   name: hello-world-app
   namespace: default
 spec:
-  replicas: 1 # Ban đầu để là 1
+  replicas: 1
   selector:
     matchLabels:
       app: hello-world
